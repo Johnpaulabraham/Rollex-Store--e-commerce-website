@@ -14,12 +14,11 @@
 
 <body>
     <!-- Header section -->
-    <!-- <div id="nav-placeholder"></div> -->
     <header class="p-3 text-white" style="background-color: black;">
         <div class="container-fluid">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <div class="flex px-5">
-                    <img src="/images/Rollex-logo.png" alt="Rollex Store logo" width="45px" class="img-fluid">
+                    <img src="./images/Rollex-logo.png" alt="Rollex Store logo" width="45px" class="img-fluid">
                     <a href="/"
                         class="d-flex align-items-center mb-2 mb-lg-0 text-l text-decoration-none fs-3 fw-bold text-white">
                         Rollex Store
@@ -37,10 +36,10 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/about.html">About</a>
+                        <a class="nav-link text-white" href="./pages/about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/contact.html">Contact</a>
+                        <a class="nav-link text-white" href="./pages/contact.html">Contact</a>
                     </li>
                 </ul>
 
@@ -64,7 +63,13 @@
 
 
     <!-- Hero section -->
-    <main class="hero">
+    <main class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.58),
+    rgba(0, 0, 0, 0.58)), url('../images/hero-background.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+max-width: 100%;
+height: 500px;">
         <div class="container-fluid">
             <div class="col-lg-7 mx-auto" style="padding-top: 50px;">
                 <h1 class="display-4 fw-bold" style="color: white; text-align: center;">
@@ -118,7 +123,51 @@
     <div
         style="background-image: url(https://images.unsplash.com/opengraph/1x1.png?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1441984904996-e0b6ba687e04%3Fcrop%3Dfaces%252Cedges%26h%3D630%26w%3D1200%26blend%3D000000%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark-w%3D750%26mark-align%3Dmiddle%252Ccenter%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fsearch-input.png%253Fw%253D750%2526h%253D84%2526txt%253Dstore%2526txt-pad%253D80%2526txt-align%253Dmiddle%25252Cleft%2526txt-color%253D%252523000000%2526txt-size%253D40%2526txt-width%253D660%2526txt-clip%253Dellipsis%2526auto%253Dformat%2526fit%253Dcrop%2526q%253D60%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxzZWFyY2h8M3x8c3RvcmV8ZW58MHx8fHwxNzIzMjAwMjczfDA%26ixlib%3Drb-4.0.3&blend-w=1&auto=format&fit=crop&q=60); background-size: cover; background-repeat: no-repeat; max-width: 1440px; height: 400px; background-position: center">
     </div>
-    <div id="footer-placeholder"></div>
+    <!-- <div id="footer-placeholder"></div> -->
+
+    <footer class="text-center p-3 text-white" style="background-color: black;">
+        <section class="container lightp-4 mx-auto" style="margin: 0 auto;">
+            <div class="row">
+                <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-light">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Contact Us</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <img src="../images/Rollex-logo.png" alt="Rollex Store Logo" style="width: 110px; height: 100px;">
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-light">Home</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-center p-3 text-white" style="background-color: black;">
+                © 2024 Copyright:
+                <a class="text-white" href="#">Rollex Store</a>
+            </div>
+    </footer>
 
 </body>
 
