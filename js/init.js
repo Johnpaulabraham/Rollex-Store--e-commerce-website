@@ -1,6 +1,6 @@
 $(function () {
   if (localStorage.getItem("user") == null && $(".auth").length) {
-    window.location.href = "/login.html";
+    window.location.href = "../pages/login.html";
   }
   loadScript("js/categories.js", categoriesSetup);
   loadScript("js/products.js", productsSetup);
@@ -16,11 +16,11 @@ $.get("/templates/navigation.html", function (data) {
   $("#nav-placeholder").replaceWith(data);
   if (localStorage.getItem("user") === null) {
     $(".accountNav").html(
-      '<li class="nav-item"><a class="nav-link text-white" href="/login.html">Login</a> </li>'
+      '<li class="nav-item"><a class="nav-link text-white" href="../pages/login.html">Login</a> </li>'
     );
   } else {
     $(".accountNav").html(
-      '<li class="nav-item"><a class="nav-link text-white" href="/account.html">Account</a></li><li class="nav-item"><a class="nav-link text-white" href="/logout.html">Log Out</a></li>'
+      '<li class="nav-item"><a class="nav-link text-white" href="../pages/account.html">Account</a></li><li class="nav-item"><a class="nav-link text-white" href="/logout.html">Log Out</a></li>'
     );
   }
 });
