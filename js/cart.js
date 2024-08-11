@@ -4,10 +4,10 @@ class Cart {
   }
 
   getCart(userID) {
-    var i = 0;
-    var apiUrl = this.apiUrl;
-    var count = 0;
-    var carts = [];
+    let i = 0;
+    let apiUrl = this.apiUrl;
+    let count = 0;
+    let carts = [];
     $.ajax({
       type: "GET",
       url: apiUrl + "carts/user/" + userID,
@@ -15,7 +15,7 @@ class Cart {
         $(data).each(function (index, cart) {
           count += cart.products.length;
           $(cart.products).each(function (index, products) {
-            var singleProduct = {};
+            let singleProduct = {};
             $.ajax({
               type: "GET",
               url: apiUrl + "products/" + products.productId,
@@ -50,7 +50,7 @@ class Cart {
   }
 
   getCartDisplay(products) {
-    var price = 0;
+    let price = 0;
     $(products).each(function (index, product) {
       price += product.price;
       $(".cartDisplay").prepend(
